@@ -45,7 +45,7 @@ services:
   - type: redis
     name: agent-cache
     plan: free
-    ipAllowList: ["0.0.0.0/0"]
+    ipAllowList: [] # Chỉ cho phép nội bộ, sửa lỗi định dạng IPSource
     maxmemoryPolicy: allkeys-lru
 
 # ============================================================
